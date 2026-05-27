@@ -24,8 +24,8 @@ class Hm_Test_Environment extends TestCase {
     public function test_get_default_value() {
         $environment = Hm_Environment::getInstance();
         $environment->load();
-        $undifined_env_data = $environment::get('APP_VERSION', "DEFAUL_VALUE");
-        $this->assertEquals('DEFAUL_VALUE', $undifined_env_data);
+        $undifined_env_data = $environment::get('APP_SETTING_BOOLEAN', "DEFAULT_VALUE");
+        $this->assertEquals('DEFAULT_VALUE', $undifined_env_data);
     }
 
     /**

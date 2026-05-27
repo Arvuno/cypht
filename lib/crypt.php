@@ -96,7 +96,7 @@ class Hm_Crypt_Base {
         $iv = self::pbkdf2($key, $salt, 16, self::$encryption_rounds, self::$hmac);
         $crypt_key = self::pbkdf2($key, $salt, 32, self::$encryption_rounds, self::$hmac);
 
-        /* return the decrpted text */
+        /* return the decrypted text */
         return openssl_decrypt($crypt_string, self::$method, $crypt_key, OPENSSL_RAW_DATA, $iv);
 
     }
@@ -187,7 +187,7 @@ class Hm_Crypt_Base {
     }
 
     /**
-     * Key derivation wth pbkdf2: http://en.wikipedia.org/wiki/PBKDF2
+     * Key derivation with pbkdf2: http://en.wikipedia.org/wiki/PBKDF2
      * @param string $key payload
      * @param string $salt random string from generate_salt
      * @return string[]
@@ -197,7 +197,7 @@ class Hm_Crypt_Base {
     }
 
     /**
-     * Key derivation wth pbkdf2: http://en.wikipedia.org/wiki/PBKDF2
+     * Key derivation with pbkdf2: http://en.wikipedia.org/wiki/PBKDF2
      * @param string $key payload
      * @param string $salt random string from generate_salt
      * @param integer $length result length
@@ -228,10 +228,10 @@ class Hm_Crypt_Base {
     }
 
     /**
-     * Hash a password using PBKDF2 or PHP password_hash if availble
+     * Hash a password using PBKDF2 or PHP password_hash if available
      * @param string $password password to hash
      * @param string $salt salt to use, if false generate a new one
-     * @param int $count interations for PBKDF2
+     * @param int $count iterations for PBKDF2
      * @param string $algo PBKDF2 algo, defaults to sha512
      * @param string $type Can be either pbkdf2 or php
      * @return string

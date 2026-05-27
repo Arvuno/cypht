@@ -201,10 +201,10 @@ function applySmtpComposePageHandlers(routeParams) {
     }
     // Handle focus management for different compose scenarios
     if (routeParams.reply == 1 || routeParams.reply_all == 1) {
-        replace_cursor_positon ($('textarea[name="compose_body"]'));
+        replace_cursor_position ($('textarea[name="compose_body"]'));
     }
     else if (routeParams.forward == 1) {
-        replace_cursor_positon ($('textarea[name="compose_body"]'));
+        replace_cursor_position ($('textarea[name="compose_body"]'));
         setTimeout(function() {
             save_compose_state();
         }, 100);

@@ -1586,8 +1586,8 @@ class Hm_Handler_check_sieve_configuration extends Hm_Handler_Module {
 
         Hm_IMAP_List::init($this->user_config, $this->session);
         $servers = Hm_IMAP_List::dump();
-        $has_uncomplete_sieve_conf = (bool) array_filter($servers, fn($item) => $item['type'] !== 'ews' && empty($item['sieve_config_host']));
-        if($has_uncomplete_sieve_conf) {
+        $has_incomplete_sieve_conf = (bool) array_filter($servers, fn($item) => $item['type'] !== 'ews' && empty($item['sieve_config_host']));
+        if($has_incomplete_sieve_conf) {
             $this->out('sieve_alert_message', 'Sieve is enabled but not fully configured on some servers. Please review and save the server configuration to complete setup.');
         }
     }

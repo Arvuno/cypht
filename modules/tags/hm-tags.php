@@ -75,7 +75,7 @@ class Hm_Tags {
         foreach ($tags as $tagId => $tag) {
             foreach ($tag['server'] as $serverId => $folders) {
                 foreach ($folders as $messages) {
-                    // Exclude folder indentifiers
+                    // Exclude folder identifiers
                     if (! is_array($messages)) {
                         continue;
                     }

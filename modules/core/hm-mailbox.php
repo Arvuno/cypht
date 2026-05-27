@@ -571,7 +571,7 @@ class Hm_Mailbox {
         if ($this->is_imap()) {
             if ($sort) {
                 if ($this->connection->is_supported('SORT')) {
-                    // use fast sort extension and search simultanously
+                    // use fast sort extension and search simultaneously
                     $uids = $this->connection->get_message_sort_order($sort, $reverse, $target, $terms, $exclude_deleted, $only_auto_bcc);
                 } else {
                     // search first and then sort only the found ones by fetch

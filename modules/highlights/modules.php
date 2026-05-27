@@ -57,7 +57,7 @@ class Hm_Handler_highlight_process_form extends Hm_Handler_Module {
             $rules = array_merge($rules);
             $this->user_config->set('highlight_rules', $rules);
             $this->session->record_unsaved('Highlight rule deleted');
-            Hm_Msgs::add('Hightlight rule deleted');
+            Hm_Msgs::add('Highlight rule deleted');
             return;
         }
         list($success, $form) = $this->process_form(array('hl_source_type', 'hl_target', 'hl_color'));
@@ -100,7 +100,7 @@ class Hm_Handler_highlight_process_form extends Hm_Handler_Module {
         $rules[] = $new_rule;
         $this->user_config->set('highlight_rules', $rules);
         $this->session->record_unsaved('Highlight rule created');
-        Hm_Msgs::add('Hightlight rule created');
+        Hm_Msgs::add('Highlight rule created');
     }
 }
 

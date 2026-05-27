@@ -13,7 +13,7 @@
  * in the doc string for that method.
  *
  * There is a lot of room for improvement by "chaining" JMAP methods together
- * into a single API request and using "back reference" suppport. Once this
+ * into a single API request and using "back reference" support. Once this
  * is working solidly it's definitely something we should look into.
  *
  */
@@ -188,8 +188,8 @@ class Hm_JMAP {
     }
 
     /**
-     * Normally whould start streaming data for an IMAP message part, but with
-     * JMAP we donwload the whole thing into $this->streaming_msg
+     * Normally would start streaming data for an IMAP message part, but with
+     * JMAP we download the whole thing into $this->streaming_msg
      * @param string $uid message uid
      * @param string $message_part message part id
      * @return integer
@@ -987,7 +987,7 @@ class Hm_JMAP {
 
     /**
      * Convert JMAP keywords to an IMAP flag string
-     * @param array $keyworkds JMAP keywords
+     * @param array $keywords JMAP keywords
      * @return string
      */
     private function keywords_to_flags($keywords) {
@@ -1035,7 +1035,7 @@ class Hm_JMAP {
      * @param string $url the JMAP url
      * @param array $methods the methods to run
      * @param string $method the HTTP method to use
-     * @param array $post optional HTTP POST BOdy
+     * @param array $post optional HTTP POST Body
      * @param array $headers custom HTTP headers
      * @return array
      */
@@ -1078,7 +1078,7 @@ class Hm_JMAP {
      * @param array $key_path path to the response key we want
      * @param mixed $default what to return if we don't find the key path
      * @param string $method the HTTP method to use
-     * @param array $post optional HTTP POST BOdy
+     * @param array $post optional HTTP POST Body
      * @return mixed
      */
     private function send_and_parse($methods, $key_path, $default=false, $method='POST', $post=array()) {

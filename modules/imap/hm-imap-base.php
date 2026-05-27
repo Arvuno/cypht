@@ -65,7 +65,7 @@ class Hm_IMAP_Base {
      * @param int $current current size read
      * @param int $line_length amount to read in using fgets()
      * @return array the data read and any "left over" data
-     *               that was inadvertantly on the same line as
+     *               that was inadvertently on the same line as
      *               the last fgets result
      */
     private function read_literal($size, $max, $current, $line_length) {
@@ -423,7 +423,7 @@ class Hm_IMAP_Base {
     }
 
     /**
-     * convert UTF-7 encoded forlder names to UTF-8
+     * convert UTF-7 encoded folder names to UTF-8
      * @param string $string mailbox name to encode
      * @return encoded mailbox
      */
@@ -435,7 +435,7 @@ class Hm_IMAP_Base {
     }
 
     /**
-     * convert UTF-8 encoded forlder names to UTF-7
+     * convert UTF-8 encoded folder names to UTF-7
      * @param string $string mailbox name to decode
      * @return decoded mailbox
      */

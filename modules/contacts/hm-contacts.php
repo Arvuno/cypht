@@ -281,7 +281,7 @@ class Hm_Address_Field {
 
     private static function is_quote($string, $i, $quote) {
         if (in_array($string[$i], array('"', "'"), true)) {
-            if (!self::embeded_quote($string, $i)) {
+            if (!self::embedded_quote($string, $i)) {
                 $quote = $quote ? false : true;
             }
         }
@@ -301,7 +301,7 @@ class Hm_Address_Field {
         return array(strrev(trim(trim($result),'"\'')), $i);
     }
 
-    private static function embeded_quote($string, $i) {
+    private static function embedded_quote($string, $i) {
         return $i > 0 && $string[$i -1] == '\\';
     }
 

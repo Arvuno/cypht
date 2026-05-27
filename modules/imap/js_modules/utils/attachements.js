@@ -1,4 +1,4 @@
-function handleAttachementDownload() {
+function handleAttachmentDownload() {
     $('.download_link a').on("click", async function(e) {
         e.preventDefault();
         const loaderInstance = showLoaderToast("Downloading attachment...");

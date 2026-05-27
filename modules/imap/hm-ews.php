@@ -5,7 +5,7 @@
  * @package modules
  * @subpackage core
  *
- * This is a drop-in replacment of IMAP, JMAP and SMTP classes that allows usage of Exchange Web Services (EWS)
+ * This is a drop-in replacement of IMAP, JMAP and SMTP classes that allows usage of Exchange Web Services (EWS)
  * in all functions provided in imap and smtp modules - accessing mailbox, folders, reading messages,
  * attachments, moving, copying, read/unread, flags, sending messages.
  * Connection to EWS is handled by garethp/php-ews package handling NLTM auth and SOAP calls.
@@ -344,7 +344,7 @@ class Hm_EWS {
 
     /**
      * Performs an EWS search using FindItem operation and supplies sorting + pagination arguments.
-     * Search can be perfomed using Advanced Query Syntax when keyword is an array containing terms
+     * Search can be performed using Advanced Query Syntax when keyword is an array containing terms
      * searching in specific fields (e.g. advanced search) or Restrictions list when requesting
      * filtering by extended properties as answered or unanswered emails.
      */
@@ -379,11 +379,11 @@ class Hm_EWS {
                     $fieldURI = 'item:DateTimeReceived';
                     break;
                 case 'CC':
-                    // TODO: figure out a way to sort by something not availalbe in FindItem operation
+                    // TODO: figure out a way to sort by something not available in FindItem operation
                     $fieldURI = null;
                     break;
                 case 'TO':
-                    // TODO: figure out a way to sort by something not availalbe in FindItem operation
+                    // TODO: figure out a way to sort by something not available in FindItem operation
                     $fieldURI = null;
                     break;
                 case 'SUBJECT':
@@ -737,7 +737,7 @@ class Hm_EWS {
             foreach ($message->getInternetMessageHeaders() as $header) {
                 $headerMappings = [
                     'x-gm-msgid' => 'google_msg_id',
-                    'x-gm-thrid' => 'google_thread_id',
+                    'x-gm-third' => 'google_thread_id',
                     'x-gm-labels' => 'google_labels',
                     'x-auto-bcc' => 'x_auto_bcc',
                     'message-id' => 'message_id',

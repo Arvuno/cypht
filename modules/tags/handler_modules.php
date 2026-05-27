@@ -28,22 +28,22 @@ class Hm_Handler_add_tag_to_message extends Hm_Handler_Module {
             return;
         }
 
-        $taged_messages = 0;
+        $tagged_messages = 0;
         $ids = explode(',', $form['list_path']);
         foreach ($ids as $msg_part) {
             list($imap_server_id, $msg_id, $folder) = explode('_', $msg_part);
             $folder = hex2bin($folder);
             $tagged = Hm_Tags::addMessage($form['tag_id'], $imap_server_id, $folder, $msg_id);
             if ($tagged) {
-                $taged_messages++;
+                $tagged_messages++;
             }
         }
-        $this->out('taged_messages', $taged_messages);
+        $this->out('tagged_messages', $tagged_messages);
         $type = 'success';
-        if ($taged_messages == count($ids)) {
+        if ($tagged_messages == count($ids)) {
             $msg = 'Tag added';
-        } elseif ($taged_messages > 0) {
-            $msg = 'Some messages have been taged';
+        } elseif ($tagged_messages > 0) {
+            $msg = 'Some messages have been tagged';
             $type = 'warning';
         } else {
             $msg = 'ERRFailed to tag selected messages';
@@ -67,22 +67,22 @@ class Hm_Handler_remove_tag_from_message extends Hm_Handler_Module {
             return;
         }
 
-        $untaged_messages = 0;
+        $untagged_messages = 0;
         $ids = explode(',', $form['list_path']);
         foreach ($ids as $msg_part) {
             list($imap_server_id, $msg_id, $folder) = explode('_', $msg_part);
             $folder = hex2bin($folder);
             $untagged = Hm_Tags::removeMessage($msg_id, $form['tag_id']);
             if ($untagged) {
-                $untaged_messages++;
+                $untagged_messages++;
             }
         }
-        $this->out('untaged_messages', $untaged_messages);
+        $this->out('untagged_messages', $untagged_messages);
         $type = 'success';
-        if ($untaged_messages == count($ids)) {
+        if ($untagged_messages == count($ids)) {
             $msg = 'Tag removed';
-        } elseif ($untaged_messages > 0) {
-            $msg = 'Messages have been untaged';
+        } elseif ($untagged_messages > 0) {
+            $msg = 'Messages have been untagged';
             $type = 'warning';
         } else {
             $msg = 'ERRFailed to remove tag from selected messages';

@@ -272,7 +272,7 @@ var reset_smtp_form = function(save = true) {
     }
 };
 
-var replace_cursor_positon = function (txtElement) {
+var replace_cursor_position = function (txtElement) {
     txtElement.val('\r\n\r\n\r\n'+txtElement.val());
     txtElement.prop('selectionEnd',0);
     txtElement.focus();

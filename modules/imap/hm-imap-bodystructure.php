@@ -30,12 +30,12 @@ class Hm_IMAP_Struct {
 
     /* Field order of a single non-text message part */
     private $single_format = array( 'type' => 0, 'subtype' => 1, 'attributes' => 2, 'id' => 3, 'description' => 4,
-        'encoding' => 5, 'size' => 6, 'md5' => 7, 'file_attributes' => 8, 'langauge' => 9, 'location' => 10,);
+        'encoding' => 5, 'size' => 6, 'md5' => 7, 'file_attributes' => 8, 'language' => 9, 'location' => 10,);
 
     /* Field order of a single text message part */
     private $text_format = array( 'type' => 0, 'subtype' => 1, 'attributes' => 2, 'id' => 3, 'description' => 4,
         'encoding' => 5, 'size' => 6, 'lines' => 7, 'md5' => 8, 'disposition' => 9, 'file_attributes' => 10,
-        'langauge' => 11, 'location' => 12,);
+        'language' => 11, 'location' => 12,);
 
     /* Field order of an RFC822 container part */
     private $rfc822_format = array( 'type' => 0, 'subtype' => 1, 'attributes' => 2, 'id' => 3, 'description' => 4,

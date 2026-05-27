@@ -5,7 +5,7 @@
  * The 2 versions of libsodium differ in the following ways:
  *
  * PECL uses a Sodium namespace, the PHP version does not
- * PECL exposes the extension as "libsodium", the PHP verions is "sodium"
+ * PECL exposes the extension as "libsodium", the PHP versions is "sodium"
  * PHP prefixes functions and constants with "sodium_"
  *
  * @package framework

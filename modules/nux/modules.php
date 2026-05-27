@@ -288,7 +288,7 @@ class Hm_Handler_get_nux_service_details extends Hm_Handler_Module {
 /**
  * @subpackage nux/handler
  */
-class Hm_Handler_process_import_accouts_servers extends Hm_Handler_Module
+class Hm_Handler_process_import_accounts_servers extends Hm_Handler_Module
 {
     public function process()
     {

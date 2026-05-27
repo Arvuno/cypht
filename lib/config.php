@@ -27,7 +27,7 @@ abstract class Hm_Config {
     public $save_on_login = false;
 
     /**
-     * This method must be overriden by classes extending this one
+     * This method must be overridden by classes extending this one
      * @param string $source source or identifier to determine the source
      * @param string $key encryption key
      */
@@ -55,7 +55,7 @@ abstract class Hm_Config {
     }
 
     /**
-     * Return a versoin number
+     * Return a version number
      * @return float
      */
     public function version() {
@@ -190,7 +190,7 @@ class Hm_User_Config_File extends Hm_Config {
     /* config values */
     private $site_config;
 
-    /* encrption flag */
+    /* encryption flag */
     private $crypt;
 
     /* username */
@@ -323,7 +323,7 @@ class Hm_User_Config_DB extends Hm_Config {
     /* DB connection handle */
     private $dbh;
 
-    /* encrption class */
+    /* encryption class */
     private $crypt;
 
     /* username */
@@ -479,7 +479,7 @@ class Hm_Site_Config_File extends Hm_Config {
 
     /**
      * @param string $all_configs
-     * @param string $key encryption key (unsued in this class)
+     * @param string $key encryption key (unused in this class)
      * @return void
      */
     public function load($all_configs, $key) {

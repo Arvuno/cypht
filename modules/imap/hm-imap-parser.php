@@ -93,7 +93,7 @@ class Hm_IMAP_Parser extends Hm_IMAP_Base {
     }
 
     /**
-     * build a QRESYNC IMAP extension paramater for a SELECT statement
+     * build a QRESYNC IMAP extension parameter for a SELECT statement
      * @return string param to use
      */
     protected function build_qresync_params() {

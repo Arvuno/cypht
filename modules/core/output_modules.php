@@ -960,7 +960,7 @@ class Hm_Output_start_flagged_settings extends Hm_Output_Module {
  */
 class Hm_Output_start_everything_settings extends Hm_Output_Module {
     /**
-     * Setttings in this section control the Everything view
+     * Settings in this section control the Everything view
      */
     protected function output() {
         if ($this->get('single_server_mode')) {
@@ -1015,7 +1015,7 @@ class Hm_Output_start_all_email_settings extends Hm_Output_Module {
  */
 class Hm_Output_start_search_settings extends Hm_Output_Module {
     /**
-     * General settings like langauge and timezone will go here
+     * General settings like language and timezone will go here
      */
     protected function output() {
         return '<tr><td colspan="2" class="settings_subtitle cursor-pointer border-bottom p-2 py-4">'.
@@ -1031,7 +1031,7 @@ class Hm_Output_start_search_settings extends Hm_Output_Module {
  */
 class Hm_Output_start_general_settings extends Hm_Output_Module {
     /**
-     * General settings like langauge and timezone will go here
+     * General settings like language and timezone will go here
      */
     protected function output() {
         return '<tr><td data-target=".general_setting" colspan="2" class="settings_subtitle cursor-pointer border-bottom p-2">'.
@@ -1405,7 +1405,7 @@ class Hm_Output_folder_list_start extends Hm_Output_Module {
  */
 class Hm_Output_folder_list_content_start extends Hm_Output_Module {
     /**
-     * Creates a modfiable string called formatted_folder_list other modules append to
+     * Creates a modifiable string called formatted_folder_list other modules append to
      */
     protected function output() {
         if ($this->format == 'HTML5') {

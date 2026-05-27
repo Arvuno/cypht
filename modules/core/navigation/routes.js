@@ -1,5 +1,5 @@
 /*
-NOTE: Handlers are registered as strings instead of functions because some modules might not be enabled, making their pages' handler functions unaccessible.
+NOTE: Handlers are registered as strings instead of functions because some modules might not be enabled, making their pages' handler functions inaccessible.
 */
 const routes = [
     {

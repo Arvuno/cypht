@@ -73,7 +73,7 @@ function interface_langs() {
 }}
 
 /**
- * Tranlate a human readable time string
+ * Translate a human readable time string
  * @subpackage core/functions
  * @param string $str string to translate
  * @param object $output_mod Hm_Output_Module

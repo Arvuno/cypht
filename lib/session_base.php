@@ -212,7 +212,7 @@ abstract class Hm_Session {
     }
 
     /**
-     * Record session level changes not yet saved in persistant storage
+     * Record session level changes not yet saved in persistent storage
      * @param string $value short description of the unsaved value
      * @return void
      */
@@ -259,7 +259,7 @@ abstract class Hm_Session {
     /**
      * Decrypt session data
      * @param string $data encrypted session data
-     * @return false|array decrpted session data
+     * @return false|array decrypted session data
      */
     public function plaintext($data) {
         return Hm_transform::unstringify(Hm_Crypt::plaintext($data, $this->enc_key));
@@ -336,7 +336,7 @@ abstract class Hm_Session {
     }
 
     /**
-     * Prep cookie paramaters
+     * Prep cookie parameters
      * @param object $request request details
      * @param string $name cookie name
      * @param string $path cookie path

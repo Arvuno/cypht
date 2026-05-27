@@ -269,7 +269,7 @@ class Hm_Debug {
 
 /**
  * Easy to use error logging
- * @param mixed $mixed vaule to send to the log
+ * @param mixed $mixed value to send to the log
  * @return boolean|null
  */
 function elog($mixed) {

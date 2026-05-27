@@ -371,7 +371,7 @@ return [
     | ---------------
     |
     | Cypht will detect mobile devices and display a mobile optimized UI. If you want
-    | to aways use this UI regardless of device, set this to true
+    | to always use this UI regardless of device, set this to true
     |
     */
     'always_mobile_ui' => env('ALWAYS_MOBILE_UI'),
@@ -383,7 +383,7 @@ return [
     |
     | Users can select from available interface languages on the site settings page.
     | This sets the default for a user who has not done so. Valid values are the
-    | langauge codes that have matching language definitions in the language/ folder.
+    | language codes that have matching language definitions in the language/ folder.
     |
     */
     'default_language' => env('DEFAULT_LANGUAGE', 'en'),
@@ -395,7 +395,7 @@ return [
     |
     | When the configuration script is run, all JavaScript files are concatenated
     | and optionally compressed. To compress the content, define a command and its
-    | options below. Cypht does not come with compresson software, so you must
+    | options below. Cypht does not come with compression software, so you must
     | install and configure that separately. Leave blank or set to false to disable
     | external compression. Compression software must be able to handle ES6.
     | Example:
@@ -411,7 +411,7 @@ return [
     |
     | When the configuration script is run, all CSS files are concatenated and
     | optionally compressed. To compress the content, define a command and its
-    | options below. Cypht does not come with compresson software, so you must
+    | options below. Cypht does not come with compression software, so you must
     | install and configure that separately. Leave blank or set to false to disable
     | external compression.
     |
@@ -499,7 +499,7 @@ return [
     | Cypht logins only last as long as the browser is open. Closing the browser,
     | or moving to a new network, will cause you to be logged out. This setting
     | provides users with a "stay logged in" option during login that will set the
-    | sesison lifetime to a default of 30 days, and disable the IP address check.
+    | session lifetime to a default of 30 days, and disable the IP address check.
     |
     | USE WITH CAUTION SINCE THIS DISABLES SOME SESSION PROTECTIONS.
     |

@@ -6,7 +6,7 @@
  */
 
 /**
- * Override the session class. These are the methods that must be overriden to
+ * Override the session class. These are the methods that must be overridden to
  * create a new session backend. The "session_type" value in your config/app.php must
  * be set to "custom" to activate this class. There are several other
  * properties and methods that can be modified to create custom sessions:
@@ -100,7 +100,7 @@ class Custom_Session extends Hm_PHP_Session {
 }
 
 /**
- * Override the authentication class. This method needs to be overriden to
+ * Override the authentication class. This method needs to be overridden to
  * create a custom authentication backend. You must set the "auth_type" setting
  * in your config/app.php file to "custom" to activate this class. More information
  * about the base class for authentication is located here:
