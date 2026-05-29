@@ -128,3 +128,6 @@ Fill out the PR template:
 **We appreciate all feedback and support of the project.**
 
 If you have questions, please join our chat at: https://gitter.im/cypht-org/community
+
+## Contributors
+- Documentation improvements (2026)
