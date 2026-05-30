@@ -128,7 +128,7 @@ add_handler('home', 'check_sieve_configuration', true, 'nux','load_imap_servers_
 add_output('home', 'display_sieve_misconfig_alert', true, 'nux', 'start_welcome_dialog', 'after');
 
 /**
- * toggle fliter
+ * toggle filter
  */
 setup_base_ajax_page('ajax_sieve_toggle_script_state', 'core');
 add_handler('ajax_sieve_toggle_script_state', 'load_imap_servers_from_config', true, 'imap', 'load_user_data', 'after');

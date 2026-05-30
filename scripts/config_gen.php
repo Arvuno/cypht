@@ -510,8 +510,8 @@ function combine_includes($js, $js_compress, $css, $css_compress, $settings) {
 /**
  * Write the hm3.rc file to disk
  *
- * @param $settings array site settings list (unsued with .env support)
- * @param $filters array combined list of filters from all modules (unsued with .env support)
+ * @param $settings array site settings list (unused with .env support)
+ * @param $filters array combined list of filters from all modules (unused with .env support)
  *
  * @return void
  */

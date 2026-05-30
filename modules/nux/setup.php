@@ -51,7 +51,7 @@ add_output('home', 'nux_dev_news', true, 'nux', 'nux_help', 'after');
 
 add_output('message_list', 'nux_message_list_notice', true, 'nux', 'message_list_start', 'before');
 
-add_handler('servers', 'process_import_accouts_servers', true, 'nux','load_smtp_servers_from_config', 'after');
+add_handler('servers', 'process_import_accounts_servers', true, 'nux','load_smtp_servers_from_config', 'after');
 add_output('servers', 'quick_add_multiple_section', true, 'nux', 'server_config_stepper_accordion_end_part', 'after');
 add_output('servers', 'quick_add_multiple_dialog', true, 'nux', 'quick_add_multiple_section', 'after');
 

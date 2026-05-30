@@ -366,7 +366,7 @@ TODO
 
 - db setup
     - access test
-    - schema for diffrent db types
+    - schema for different db types
         - postgres
         - mysql
         - sqlite

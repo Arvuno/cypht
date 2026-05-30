@@ -1331,7 +1331,7 @@ let edit_filter_modal_for_custom_actions;
 let edit_filter_template_content;
 
 function createFilterFromList(launcherModal) {
-    const froms = collectChips('#filter-from-list');
+    const forms = collectChips('#filter-from-list');
     const subjects = collectChips('#filter-subject-list');
 
     const subjectFilterType = $(
@@ -1345,7 +1345,7 @@ function createFilterFromList(launcherModal) {
     current_account_element = find_account_element(mailboxName);
 
     const filterDraft = {
-        from: froms,
+        from: forms,
         subject_contains: subjects,
         use_subject: subjectFilterType !== 'any',
         subject_filter_type: subjectFilterType,

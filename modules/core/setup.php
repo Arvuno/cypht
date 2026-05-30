@@ -163,7 +163,7 @@ setup_base_ajax_page('ajax_save_search_all_folders', 'core');
 add_handler('ajax_save_search_all_folders', 'ajax_save_search_all_folders', true, 'core', 'load_user_data', 'after');
 add_handler('ajax_save_search_all_folders', 'save_user_data', true, 'core', 'ajax_save_search_all_folders', 'after');
 
-/* password udpates when not saving between logins */
+/* password updates when not saving between logins */
 setup_base_ajax_page('ajax_update_server_pw', 'core');
 add_handler('ajax_update_server_pw', 'save_user_data', true, 'core', 'language', 'before');
 add_handler('ajax_update_server_pw', 'check_missing_passwords', true, 'core', 'load_user_data', 'after');

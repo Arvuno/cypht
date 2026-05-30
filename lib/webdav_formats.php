@@ -74,7 +74,7 @@ trait Hm_Card_Line_Parse {
     }
 
     /**
-     * Validate a paramater
+     * Validate a parameter
      * @param string $param parameter to validate
      * @return boolean
      */
@@ -247,7 +247,7 @@ class Hm_Card_Parse {
     }
 
     /**
-     * Look for a sepcific type
+     * Look for a specific type
      */
     private function is_type($type, $vals) {
         if (!$type) {
@@ -370,7 +370,7 @@ class Hm_Card_Parse {
     }
 
     /**
-     * Build the vcard entry paramater string
+     * Build the vcard entry parameter string
      * @param array field values
      * @return array
      */

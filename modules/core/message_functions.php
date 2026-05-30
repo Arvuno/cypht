@@ -7,7 +7,7 @@
  */
 
 /**
- * Format a message body that has HMTL markup
+ * Format a message body that has HTML markup
  * @subpackage core/functions
  * @param string $str message HTML
  * @param bool $images allow external images

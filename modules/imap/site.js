@@ -898,7 +898,7 @@ var imap_message_view_finished = function(msg_uid, detail, listParent, skip_link
     fixLtrInRtl();
 
     handleExternalResources();
-    handleAttachementDownload();
+    handleAttachmentDownload();
     handleViewMessagePart();
 };
 

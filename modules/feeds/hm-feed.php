@@ -46,7 +46,7 @@ class Hm_Feed_List {
 }
 
 /**
- * Used to cahce "read" feed item ids
+ * Used to cache "read" feed item ids
  * @subpackage feeds/lib
  */
 class Hm_Feed_Uid_Cache {

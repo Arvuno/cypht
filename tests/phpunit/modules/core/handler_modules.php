@@ -18,7 +18,7 @@ class Hm_Test_Core_Handler_Modules extends TestCase {
     }
     /**
      * @preserveGlobalState disabled
-     * @runInSeparateProcesM#s
+     * @runInSeparateProcess
      */
     public function test_process_pw_update() {
         $test = new Handler_Test('process_pw_update', 'core');

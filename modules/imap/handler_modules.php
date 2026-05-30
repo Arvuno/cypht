@@ -1403,12 +1403,12 @@ class Hm_Handler_imap_search extends Hm_Handler_Module {
 }
 
 /**
- * Get message headers for the Everthing page
+ * Get message headers for the Everything page
  * @subpackage imap/handler
  */
 class Hm_Handler_imap_message_list extends Hm_Handler_Module {
     /**
-     * Returns list of message data for the Everthing page
+     * Returns list of message data for the Everything page
      */
     public function process() {
         $defaultGetParams = [

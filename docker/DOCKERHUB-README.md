@@ -46,4 +46,4 @@ Make changes to it and source it in to the docker-compose via 'env_file':
       - /etc/cypht-prod.env
 ```
 
-In order to avoid confusion, it is best to use only the env file and not set addition env vars in the docker compose file if possilbe.
+In order to avoid confusion, it is best to use only the env file and not set addition env vars in the docker compose file if possible.

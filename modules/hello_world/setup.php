@@ -3,7 +3,7 @@
 /**
  * Hello World example module set.
  *
- * This module set is intented to give developers an overview of
+ * This module set is intended to give developers an overview of
  * the module system. Most of what it does is silly and consists of printing "Hello
  * World" in different ways. You can enable this module by adding it to the modules
  * value in the config/app.php file.
@@ -47,7 +47,7 @@ output_source('hello_world');
 add_output('home', 'hello_world_home_page', true, 'hello_world', 'content_section_start', 'after');
 
 /**
- * Creates a new page in the program for the hello_world page identifier (accesed by the
+ * Creates a new page in the program for the hello_world page identifier (accessed by the
  * page=hello_world URL argument). All this does is assign the core set of modules to this
  * identifier. It's defined in the setup.php file of the core module set.
  */
@@ -72,7 +72,7 @@ add_handler('ajax_hello_world', 'http_headers', true, 'core');
 
 /**
  * Add our own custom output module to the ajax request. See the site.js file in this
- * module set for further explination of how to trigger and process ajax requests.
+ * module set for further explanation of how to trigger and process ajax requests.
  */
 add_output('ajax_hello_world', 'hello_world_ajax_content', true);
 

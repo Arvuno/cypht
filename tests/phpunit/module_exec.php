@@ -24,7 +24,7 @@ class Hm_Test_Module_Exec extends TestCase {
      * @preserveGlobalState disabled
      * @runInSeparateProcess
      */
-    public function test_default_langauge() {
+    public function test_default_language() {
         $this->module_exec->default_language();
         $this->assertEquals('es', $this->module_exec->handler_response['language']);
     }

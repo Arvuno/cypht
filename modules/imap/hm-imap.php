@@ -141,7 +141,7 @@ if (!class_exists('Hm_IMAP')) {
         /* default IMAP folder delimiter. Only used if NAMESPACE is not supported */
         public $default_delimiter = '/';
 
-        /* defailt IMAP mailbox prefix. Only used if NAMESPACE is not supported */
+        /* default IMAP mailbox prefix. Only used if NAMESPACE is not supported */
         public $default_prefix = '';
 
         /* list of supported IMAP extensions to ignore */
@@ -206,7 +206,7 @@ if (!class_exists('Hm_IMAP')) {
         /**
          * connect to the imap server
          * @param array $config list of configuration options for this connections
-         * @return bool true on connection sucess
+         * @return bool true on connection success
          */
         public function connect($config) {
             if (isset($config['username']) && isset($config['password'])) {
@@ -984,7 +984,7 @@ if (!class_exists('Hm_IMAP')) {
             }
             $command = 'UID FETCH '.$sorted_string.' (FLAGS INTERNALDATE RFC822.SIZE ';
             if ($this->is_supported( 'X-GM-EXT-1' )) {
-                $command .= 'X-GM-MSGID X-GM-THRID X-GM-LABELS ';
+                $command .= 'X-GM-MSGID X-GM-THIRD X-GM-LABELS ';
             }
             if ($active_body_structure) {
                 $command .= "BODYSTRUCTURE ";
@@ -1002,7 +1002,7 @@ if (!class_exists('Hm_IMAP')) {
             $this->send_command($command);
             $res = $this->get_response(false, true);
             $status = $this->check_response($res, true);
-            $tags = array('X-GM-MSGID' => 'google_msg_id', 'X-GM-THRID' => 'google_thread_id', 'X-GM-LABELS' => 'google_labels', 'UID' => 'uid', 'FLAGS' => 'flags', 'RFC822.SIZE' => 'size', 'INTERNALDATE' => 'internal_date');
+            $tags = array('X-GM-MSGID' => 'google_msg_id', 'X-GM-THIRD' => 'google_thread_id', 'X-GM-LABELS' => 'google_labels', 'UID' => 'uid', 'FLAGS' => 'flags', 'RFC822.SIZE' => 'size', 'INTERNALDATE' => 'internal_date');
             $junk = array('X-AUTO-BCC', 'MESSAGE-ID', 'IN-REPLY-TO', 'REFERENCES', 'X-SNOOZED', 'X-SCHEDULE', 'X-PROFILE-ID', 'X-DELIVERY', 'LIST-ARCHIVE', 'SUBJECT', 'FROM', 'CONTENT-TYPE', 'TO', '(', ')', ']', 'X-PRIORITY', 'DATE', 'X-MS-EXCHANGE-CALENDAR-SERIES-INSTANCE-ID', 'SENDER');
             $flds = array('x-auto-bcc' => 'x_auto_bcc', 'message-id' => 'message_id', 'in-reply-to' => 'in_reply_to', 'references' => 'references', 'x-snoozed' => 'x_snoozed', 'x-schedule' => 'x_schedule', 'x-profile-id' => 'x_profile_id', 'x-delivery' => 'x_delivery', 'list-archive' => 'list_archive', 'date' => 'date', 'from' => 'from', 'to' => 'to', 'subject' => 'subject', 'content-type' => 'content_type', 'x-priority' => 'x_priority', 'body' => 'content_body', 'type_msg' => 'type_msg');
             $flds['x-ms-exchange-calendar-series-instance-id'] = "x_ms_exchange_calendar_series_instance_id";

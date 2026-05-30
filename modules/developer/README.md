@@ -3,7 +3,7 @@
 This module set provides tools that are useful for developers adding
 features to Cypht. It adds 2 pages to the Settings menu:
 
-- info: This page shows infromation about the Cypht installation,
+- info: This page shows information about the Cypht installation,
   the status of existing server connections, and a configuration "map"
   that breaks down what modules are associated with what page, with
   links to the code online.

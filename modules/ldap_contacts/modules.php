@@ -313,7 +313,7 @@ class Hm_Handler_process_add_to_ldap_server extends Hm_Handler_Module {
                 $this->out('contact_added', 1);
             }
             else {
-                Hm_Msgs::add('Could not add contact, eror: '.$ldap->error(), 'danger');
+                Hm_Msgs::add('Could not add contact, error: '.$ldap->error(), 'danger');
             }
         } else {
             Hm_Msgs::add('Could not add contact: failed to connect to LDAP server', 'danger');

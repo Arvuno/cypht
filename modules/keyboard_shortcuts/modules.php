@@ -47,7 +47,7 @@ class Hm_Handler_process_edit_shortcut extends Hm_Handler_Module {
             $meta_list = array();
             foreach ($form['shortcut_meta'] as $meta) {
                 if (!in_array($meta, array('meta', 'alt', 'shift', 'control', 'none'))) {
-                    Hm_Msgs::add('Uknown modifier key', 'warning');
+                    Hm_Msgs::add('Unknown modifier key', 'warning');
                     return;
                 }
                 if ($meta != 'none') {
@@ -296,7 +296,7 @@ function shortcut_defaults($user_config=false) {
 /**
  * @subpackage keyboard_shortcuts/functions
  */
-if (!hm_exists('fromat_keyboard_action')) {
+if (!hm_exists('format_keyboard_action')) {
 function format_keyboard_action($action) {
     $actions = Array(
         'Keyboard_Shortcuts.unfocus' => 'unfocus',

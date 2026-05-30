@@ -56,7 +56,7 @@ class Hm_Output_hello_world_page_content extends Hm_Output_Module {
          */
         if ($this->format == 'HTML5' && $this->get('hello_world_data')) {
             /**
-             * $this->trans() will try to find a translation in the user's current langauge for
+             * $this->trans() will try to find a translation in the user's current language for
              * the supplied string. It also sanitizes output. If you don't want to translate you
              * and just sanitize, use $this->html_safe().
              */
@@ -75,7 +75,7 @@ class Hm_Output_hello_world_page_content extends Hm_Output_Module {
 class Hm_Output_hello_world_home_page extends Hm_Output_Module {
     protected function output() {
         /**
-         * $this->trans() will try to find a translation in the user's current langauge for
+         * $this->trans() will try to find a translation in the user's current language for
          * the supplied string. It also sanitizes output. If you don't want to translate you
          * and just sanitize, use $this->html_safe().
          */

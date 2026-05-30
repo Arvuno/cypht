@@ -312,7 +312,7 @@ class Hm_Handler_process_all_email_source_max_setting extends Hm_Handler_Module 
 }
 
 /**
- * Process input from the no pasword between logins setting
+ * Process input from the no password between logins setting
  * @subpackage core/handler
  */
 class Hm_Handler_process_no_password_setting extends Hm_Handler_Module {
@@ -754,7 +754,7 @@ class Hm_Handler_default_page_data extends Hm_Handler_Module {
  */
 class Hm_Handler_load_user_data extends Hm_Handler_Module {
     /**
-     * Load data from persistant storage on login, or from the session if already logged in
+     * Load data from persistent storage on login, or from the session if already logged in
      */
     public function process() {
         list($success, $form) = $this->process_form(array('username', 'password'));

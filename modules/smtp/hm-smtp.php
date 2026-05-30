@@ -236,7 +236,7 @@ class Hm_SMTP {
 
     }
     /* Checks if the numeric response matches the code in $check.
-       The return value is simalar to strcmp
+       The return value is similar to strcmp
        Returns <0 if $check is less than the response
        Returns  0 if $check is equal to the response
        Returns >0 if $check is greater than the response
@@ -268,7 +268,7 @@ class Hm_SMTP {
                 case 'starttls': // supports starttls
                     $this->supports_tls = true;
                     break;
-                case 'auth': // supported auth mechanisims
+                case 'auth': // supported auth mechanisms
                     $auth_mecs = array_slice($line[1], 1);
                     $this->supports_auth = array_map(function($v) { return mb_strtolower($v); }, $auth_mecs);
                     break;
@@ -529,7 +529,7 @@ class Hm_SMTP {
         return pack('vvV', $len, $len, $offset);
     }
 
-    /* build the NTLM lm hash then ecnrypt the challenge string with it */
+    /* build the NTLM lm hash then encrypt the challenge string with it */
     function build_lm_response($msg_data, $username, $password){
         $pass = strtoupper($password);
         while (strlen($pass) < 14) {
@@ -547,7 +547,7 @@ class Hm_SMTP {
         return $this->apply_ntlm_hash($msg_data['vals']['challenge'], $lm_hash);
     }
 
-    /* build the NTLM ntlm hash then ecnrypt the challenge string with it */
+    /* build the NTLM ntlm hash then encrypt the challenge string with it */
     function build_ntlm_response($msg_data, $username, $password){
         $password = iconv('UTF-8', 'UTF-16LE', $password);
         $ntlm_hash = hash('md4', $password, true);

@@ -281,7 +281,7 @@ class Hm_Test_Hm_IMAP extends TestCase {
         $res = array ( 1 => array( 'type' => 'text', 'subtype' => 'plain',
             'attributes' => array('charset' => 'utf-8'), 'id' => '', 'description' => '',
             'encoding' => '7bit', 'size' => '1317', 'lines' => '32', 'md5' => '',
-            'disposition' => '', 'file_attributes' => '', 'langauge' => '', 'location' => ''));
+            'disposition' => '', 'file_attributes' => '', 'language' => '', 'location' => ''));
 
         $this->assertEquals(array(), $this->imap->get_message_structure('foo'));
         $this->assertEquals($res, $this->imap->get_message_structure(1731));
